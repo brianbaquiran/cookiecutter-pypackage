@@ -1,6 +1,7 @@
 import logging
 
 from sqlalchemy import MetaData
+from sqlalchemy.ext.declarative import declarative_base
 
 logger = logging.getLogger(__name__)
 
