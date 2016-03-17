@@ -32,9 +32,12 @@ setup(
     url='https://github.com/{{ cookiecutter.github_username }}/{{ cookiecutter.project_slug }}',
     packages=[
         '{{ cookiecutter.project_slug }}',
+        '{{ cookiecutter.django_app_name }}',
     ],
     package_dir={'{{ cookiecutter.project_slug }}':
-                 '{{ cookiecutter.project_slug }}'},
+                 '{{ cookiecutter.project_slug }}',
+                 '{{ cookiecutter.django_app_name }}':
+                 '{{ cookiecutter.django_app_name }}'},
     include_package_data=True,
     install_requires=requirements,
     license="ISCL",
